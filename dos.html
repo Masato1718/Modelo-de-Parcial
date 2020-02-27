@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>Curso Ingreso UTN FRA</title>
+
+	<!--/estilos-->
+	<link rel="stylesheet" type="text/css" href="estilo.css">
+	<link rel="stylesheet" type="text/css" href="animacion.css">
+	<!--final de /estilos-->
+
+	<!--Lógica-Programación-->
+	<script type="text/javascript" src="dos.js"></script>
+	<!--Final de Lógica-Programación -->
+	<link rel="icon" type="image/x-icon" href="favicon.ico">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+
+<body>
+
+	<div class=" animated bounceInRight header">
+		<a class="MiBotonUTNnav" onclick="location.href='index.html'"><i class="far fa-hand-point-left"></i>Men&uacute;
+			ejercicios</a>
+	</div>
+
+	<div class="row">
+		<div class="col-4 col-s-9">
+			<form id="FormIngreso" class=" animated bounceInLeft">
+				<h1>Ingrese datos </h1>
+
+				<a class="MiBotonUTNnav" onclick="mostrar()">Mostrar informaci&oacute;n</a>
+			</form>
+		</div>
+
+		<div class="col-8 col-s-12">
+			<div class="aside animated bounceInUp">
+				<h2>Enunciado:</h2>
+				<h3>
+					Debemos realizar la carga de cuatro personas, </br>
+					de cada una debo obtener los siguientes datos: </br>
+					el nombre, </br>
+					el género (validar "masculino", "femenino" u "otro"), </br>
+					la edad (validar que sea un número y esté entre 18 y 100), </br>
+					y el peso (validar que sea un número y mayor a 1).</br> 
+				</br>
+					a) El promedio de las edades mayores o iguales a 25.</br>
+					b) El nombre de la persona menos pesada y su peso.</br>
+					c) La cantidad personas de género distinto a masculino ó peso mayor a 80.</br>
+				</br>
+					<span style="font-size: 12px;">Caso de prueba:</br>
+					1) Nombre: "Ana"; Género: "mujer" (mal), Género: "f"(mal), Género: "femenino" (bien);
+					Edad: 40; Peso: 60.</br>
+					2) Nombre: "Gaby"; Género: "otro"; Edad: "a" (mal), Edad: 17 (mal), Edad: 101 (mal),
+					Edad: 18 (bien); Peso: 40.</br>
+					3) Nombre: "Luis"; Género: "masculino"; Edad: 60;
+					Peso: "k" (mal), Peso: 0 (mal), Peso: 79 (bien).</br>
+					4) Nombre: "Alan"; Género: "masculino"; Edad: 25; Peso: 90.</br>
+				</br>
+					Resultado:</br>
+					- Promedio de las edades mayores o iguales a 25: 41,67 (apróx).</br>
+					- Nombre de la persona menos pesada y su peso: "Gaby" (40 kg).</br>
+					- Cantidad de personas de género distinto a masculino ó peso mayor a 80: 3 (tres).
+					</span>
+				</h3>
+			</div>
+		</div>
+	</div>
+
+	<div class="footer">
+
+
+		<p>Curso de ingreso UTN FRA</p>
+	</div>
+
+</body>
+
+</html>

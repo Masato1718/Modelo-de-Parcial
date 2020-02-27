@@ -1,0 +1,440 @@
+@import url("https://use.fontawesome.com/releases/v5.6.3/css/all.css" );
+
+
+* {
+  box-sizing: border-box;
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+[class*="col-"] {
+  float: left;
+  padding: 15px;
+}
+
+html {
+  font-family: "Lucida Sans", sans-serif;
+}
+
+.header {
+  background-color: rgb(14, 26, 112);;
+  color: #ffffff;
+  padding: 15px;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+.menu ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menu li{
+ cursor: pointer;
+  padding: 8px;
+  margin-bottom: 7px;
+  background-color: #33b5e5;
+  color: #ffffff;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+
+.menu li {
+  background-color: #0099cc;
+}
+.menu .MiBotonUTNMenuInicioParaParcial{ 
+  background-color: red !important;
+   
+}
+
+.menu .MiBotonUTNMenuInicioParaParcial:hover {
+  background-color: green !important;
+}
+.menu .MiBotonUTNMenuInicioNoParcial{ 
+  background-color: blue !important;
+   cursor: pointer;
+}
+.menu .MiBotonUTNMenuInicioNoParcial:hover {
+  background-color: skyblue !important;
+}
+.menu .MiBotonUTNMenuEjercicios:hover{
+ background: #1e5799; /* Old browsers */
+background: -moz-linear-gradient(45deg, #1e5799 0%, #2989d8 16%, #2989d8 16%, #ffffff 36%, #ffffff 43%, #ebf709 48%, #ffffff 52%, #ffffff 61%, #207cca 82%, #207cca 99%, #207cca 99%, #7db9e8 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left bottom, right top, color-stop(0%,#1e5799), color-stop(16%,#2989d8), color-stop(16%,#2989d8), color-stop(36%,#ffffff), color-stop(43%,#ffffff), color-stop(48%,#ebf709), color-stop(52%,#ffffff), color-stop(61%,#ffffff), color-stop(82%,#207cca), color-stop(99%,#207cca), color-stop(99%,#207cca), color-stop(100%,#7db9e8)); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(45deg, #1e5799 0%,#2989d8 16%,#2989d8 16%,#ffffff 36%,#ffffff 43%,#ebf709 48%,#ffffff 52%,#ffffff 61%,#207cca 82%,#207cca 99%,#207cca 99%,#7db9e8 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(45deg, #1e5799 0%,#2989d8 16%,#2989d8 16%,#ffffff 36%,#ffffff 43%,#ebf709 48%,#ffffff 52%,#ffffff 61%,#207cca 82%,#207cca 99%,#207cca 99%,#7db9e8 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(45deg, #1e5799 0%,#2989d8 16%,#2989d8 16%,#ffffff 36%,#ffffff 43%,#ebf709 48%,#ffffff 52%,#ffffff 61%,#207cca 82%,#207cca 99%,#207cca 99%,#7db9e8 100%); /* IE10+ */
+background: linear-gradient(45deg, #1e5799 0%,#2989d8 16%,#2989d8 16%,#ffffff 36%,#ffffff 43%,#ebf709 48%,#ffffff 52%,#ffffff 61%,#207cca 82%,#207cca 99%,#207cca 99%,#7db9e8 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e5799', endColorstr='#7db9e8',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+color:black;
+}
+
+
+
+.MiBotonUTNnav {
+  
+  /*text-transform: capitalize;*/
+  border:hidden;
+  width:100%;
+  background:#f50056;
+  margin:0 auto;
+  margin-top:1%;
+  padding:10px;
+  text-align:center;
+  text-decoration:none;
+  color:#fff;
+  cursor:pointer;
+  -moz-border-radius:7px;
+  -webkit-border-radius:7px;
+  border-radius:7px;
+  transition:background .3s;
+  -webkit-transition:background .3s;
+}
+
+.MiBotonUTNnav:hover{
+  background:#1BA045;
+}
+
+.aside {
+  background-color: #33b5e5;
+  padding: 5px;
+  color: #ffffff;
+  text-align: center;
+  font-size: 12px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+
+h1, h2, h3 {
+  font-size: 20px;
+}
+
+.footer {
+  background-color: #0099cc;
+  color: #ffffff;
+  text-align: center;
+  font-size: 12px;
+  padding: 15px;
+}
+
+/* For mobile phones: */
+[class*="col-"] {
+  width: 100%;
+}
+
+@media only screen and (min-width: 600px) {
+  /* For tablets: */
+  .col-s-1 {width: 8.33%;}
+  .col-s-2 {width: 16.66%;}
+  .col-s-3 {width: 25%;}
+  .col-s-4 {width: 33.33%;}
+  .col-s-5 {width: 41.66%;}
+  .col-s-6 {width: 50%;}
+  .col-s-7 {width: 58.33%;}
+  .col-s-8 {width: 66.66%;}
+  .col-s-9 {width: 75%;}
+  .col-s-10 {width: 83.33%;}
+  .col-s-11 {width: 91.66%;}
+  .col-s-12 {width: 100%;}
+}
+@media only screen and (min-width: 768px) {
+  /* For desktop: */
+  .col-1 {width: 8.33%;}
+  .col-2 {width: 16.66%;}
+  .col-3 {width: 25%;}
+  .col-4 {width: 33.33%;}
+  .col-5 {width: 41.66%;}
+  .col-6 {width: 50%;}
+  .col-7 {width: 58.33%;}
+  .col-8 {width: 66.66%;}
+  .col-9 {width: 75%;}
+  .col-10 {width: 83.33%;}
+  .col-11 {width: 91.66%;}
+  .col-12 {width: 100%;}
+}
+
+
+
+//aca el viejo
+
+* {
+  margin:0;
+  padding:0;
+}
+
+body {
+  margin: 0 auto;
+  color:#f0f0f0;
+  background:#3f51b5;
+  font-family:'Open Sans',sans-serif;
+}
+
+caption {
+  font-size: 1.6em;
+  font-weight: 400;
+  padding: 10px 0;
+}
+
+.CajaUno {
+
+  max-width: 30%;
+  width:400px;
+  margin:0 auto;
+  margin-top:8px;
+  margin-bottom:2%;
+  transition:opacity 1s;
+  -webkit-transition:opacity 1s;
+}
+
+.CajaInicio {
+  width:750px;
+  margin:0 auto;
+  margin-top:8px;
+  margin-bottom:2%;
+  transition:opacity 1s;
+  -webkit-transition:opacity 1s;
+}
+.CajaEnunciado {
+  max-width: 30%;
+  border: dashed;
+ position: fixed;
+background: royalblue;
+top: 0px;
+width: 400px;
+margin: 0;
+padding: 10px;
+/* margin-top: 8px; */
+margin-bottom: 2%;
+transition: opacity 1s;
+-webkit-transition: opacity 1s;
+border-radius: 15px;
+-webkit-border-radius: 15px;
+}
+.CajaInicio h1{
+  background:rgb(14, 26, 112);; 
+  padding:20px 0;
+  font-size:140%;
+  font-weight:300;
+  text-align:center;
+  color:#fff;
+}
+.CajaAbajo {
+   margin-top: 100px;
+  width:400px;
+  top:0px;
+left:0px;
+  transition:opacity 1s;
+  -webkit-transition:opacity 1s;
+}
+.CajaArriva {
+  margin-top: 20px;
+  width:400px;
+  top:0px;
+  left:0px;
+  transition:opacity 1s;
+  -webkit-transition:opacity 1s;
+}
+
+#FormIngreso {
+  
+ background-color: #33b5e5;
+  padding:4% 2%;
+}
+
+input{
+  width:100%;
+  background:#fff;
+  margin-bottom:2%;
+  border:1px solid #ccc;
+  padding:2%;
+  font-family:'Open Sans',sans-serif;
+  font-size:95%;
+  color:#555;
+}
+select{
+  width:100%;
+  background:#fff;
+  margin-bottom:4%;
+  border:1px solid #ccc;
+  padding:2%;
+  font-family:'Open Sans',sans-serif;
+  font-size:95%;
+  color:#555;
+}
+
+
+.MiBotonUTN {
+  display:block;
+  /*text-transform: capitalize;*/
+  border:hidden;
+  width:100%;
+  background:#f50056;
+  margin:0 auto;
+  margin-top:1%;
+  padding:10px;
+  text-align:center;
+  text-decoration:none;
+  color:#fff;
+  cursor:pointer;
+  -moz-border-radius:7px;
+  -webkit-border-radius:7px;
+  border-radius:7px;
+  transition:background .3s;
+  -webkit-transition:background .3s;
+}
+
+.MiBotonUTN:hover{
+  background:#1BA045;
+}
+.MiBotonUTNJuego {
+  
+  /*text-transform: capitalize;*/
+  border:hidden;
+  width:32%;
+  background:#f50056;
+  margin:0 auto;
+  margin-top:1%;
+  padding:10px;
+  text-align:center;
+  text-decoration:none;
+  color:#fff;
+  cursor:pointer;
+  -moz-border-radius:7px;
+  -webkit-border-radius:7px;
+  border-radius:7px;
+  transition:background .3s;
+  -webkit-transition:background .3s;
+}
+.MiBotonUTNMenu {
+  display:block;
+  /*text-transform: capitalize;*/
+  border:hidden;
+  width:100px;
+  background:#f50056;
+  margin-top:1%;
+  padding:6px;
+  text-align:center;
+  text-decoration:none;
+  color:#fff;
+  cursor:pointer;
+  -moz-border-radius:7px;
+  -webkit-border-radius:7px;
+  border-radius:7px;
+  transition:background .3s;
+  -webkit-transition:background .3s;
+}
+
+.MiBotonUTNMenu:hover{
+ background: #1e5799; /* Old browsers */
+background: -moz-linear-gradient(45deg, #1e5799 0%, #2989d8 16%, #2989d8 16%, #ffffff 36%, #ffffff 43%, #ebf709 48%, #ffffff 52%, #ffffff 61%, #207cca 82%, #207cca 99%, #207cca 99%, #7db9e8 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left bottom, right top, color-stop(0%,#1e5799), color-stop(16%,#2989d8), color-stop(16%,#2989d8), color-stop(36%,#ffffff), color-stop(43%,#ffffff), color-stop(48%,#ebf709), color-stop(52%,#ffffff), color-stop(61%,#ffffff), color-stop(82%,#207cca), color-stop(99%,#207cca), color-stop(99%,#207cca), color-stop(100%,#7db9e8)); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(45deg, #1e5799 0%,#2989d8 16%,#2989d8 16%,#ffffff 36%,#ffffff 43%,#ebf709 48%,#ffffff 52%,#ffffff 61%,#207cca 82%,#207cca 99%,#207cca 99%,#7db9e8 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(45deg, #1e5799 0%,#2989d8 16%,#2989d8 16%,#ffffff 36%,#ffffff 43%,#ebf709 48%,#ffffff 52%,#ffffff 61%,#207cca 82%,#207cca 99%,#207cca 99%,#7db9e8 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(45deg, #1e5799 0%,#2989d8 16%,#2989d8 16%,#ffffff 36%,#ffffff 43%,#ebf709 48%,#ffffff 52%,#ffffff 61%,#207cca 82%,#207cca 99%,#207cca 99%,#7db9e8 100%); /* IE10+ */
+background: linear-gradient(45deg, #1e5799 0%,#2989d8 16%,#2989d8 16%,#ffffff 36%,#ffffff 43%,#ebf709 48%,#ffffff 52%,#ffffff 61%,#207cca 82%,#207cca 99%,#207cca 99%,#7db9e8 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e5799', endColorstr='#7db9e8',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+color:black;
+}
+
+.MiBotonUTNLinea{
+  max-width: 150px;
+position: absolute;
+  /*text-transform: capitalize;*/
+  border:hidden;
+  width:100%;
+  background:#00A1F5;
+  margin:0 auto;
+  margin-top:30%;
+  padding:10px;
+  text-align:center;
+  text-decoration:none;
+  color:#fff;
+  cursor:pointer;
+  -moz-border-radius:7px;
+  -webkit-border-radius:7px;
+  border-radius:7px;
+  transition:background .3s;
+  -webkit-transition:background .3s;
+}
+.MiBotonUTNLinea:hover{
+  background:red;
+  /*text-transform: uppercase;*/
+}
+
+.menu li  .MiBotonUTNMenuInicio {
+  display:block;
+ 
+  border:hidden;
+  width:150px;
+  background:blue !important;
+  margin-top:1%;
+  padding:6px;
+  text-align:center;
+  text-decoration:none;
+  color:#fff;
+  cursor:pointer;
+  -moz-border-radius:7px;
+  -webkit-border-radius:7px;
+  border-radius:7px;
+  transition:background .3s;
+  -webkit-transition:background .3s;
+}
+.menu li .MiBotonUTNMenuInicio:hover{
+  background:#4a4a71 !important;
+}
+
+.MiBotonUTNMenuInicioParcial {
+  display:block;
+ 
+  border:hidden;
+  width:150px;
+  background:red;
+  margin-top:1%;
+  padding:6px;
+  text-align:center;
+  text-decoration:none;
+  color:#fff;
+  cursor:pointer;
+  -moz-border-radius:7px;
+  -webkit-border-radius:7px;
+  border-radius:7px;
+  transition:background .3s;
+  -webkit-transition:background .3s;
+}
+.MiBotonUTNMenuInicioParcial:hover{
+  background:green;
+}
+
+
+
+
+.CajaUno h1{
+  background:#f50056; 
+  padding:20px 0;
+  font-size:140%;
+  font-weight:300;
+  text-align:center;
+  color:#fff;
+}
+
+.CajaUno a:hover {
+  color:#f50056;
+}
+
+
+
+.CajaUno a {
+  color:#DDDDDD;
+}
+
+.PiedraPapelTijera
+{
+  width: 100px;
+  height: 100px;
+  padding: 10px;
+
+}

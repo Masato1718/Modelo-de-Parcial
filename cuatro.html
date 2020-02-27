@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>Curso Ingreso UTN FRA</title>
+
+	<!--/estilos-->
+	<link rel="stylesheet" type="text/css" href="estilo.css">
+	<link rel="stylesheet" type="text/css" href="animacion.css">
+	<!--final de /estilos-->
+
+	<!--Lógica-Programación-->
+	<script type="text/javascript" src="cuatro.js"></script>
+	<!--Final de Lógica-Programación -->
+	<link rel="icon" type="image/x-icon" href="favicon.ico">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+
+<body>
+
+	<div class=" animated bounceInRight header">
+		<a class="MiBotonUTNnav" onclick="location.href='index.html'"><i class="far fa-hand-point-left"></i>Men&uacute;
+			ejercicios</a>
+	</div>
+
+	<div class="row">
+		<div class="col-4 col-s-9">
+			<form id="FormIngreso" class=" animated bounceInLeft">
+				<h1>Ingrese datos </h1>
+
+				<a class="MiBotonUTNnav" onclick="mostrar()">Mostrar informaci&oacute;n</a>
+			</form>
+		</div>
+
+		<div class="col-8 col-s-12">
+			<div class="aside animated bounceInUp">
+				<h2>Enunciado:</h2>
+				<h3>
+					Realizar el algoritmo que permita iterar el ingreso de dos datos, </br>
+					una letra (validar que sea una letra sin caracteres especiales ni ñ. </br>
+					No distinguir mayúsculas de minúsculas. Ayuda: Utilizar tabla ASCII.), </br>
+					y un número entre -10 y 10 (validar que sea un número en ese rango) </br>
+					hasta que el usuario quiera </br>
+					e informar al terminar el ingreso por document.write: </br>
+					a) La resta de los números impares.</br>
+					b) La suma de los números pares.</br>
+					c) La cantidad de ceros.</br>
+					d) El promedio de todos los números negativos ingresados.</br>
+					e) La multiplicación de todos los números positivos.</br>
+					f) El número y la letra del máximo.</br>
+					g) El número y la letra del mínimo.</br>
+					h) La cantidad de vocales.</br>
+					</br>
+					<b>!!! Cero no es par, ni impar, ni positivo, ni negativo.!!!</b></br>
+					</br>
+					<span style="font-size: 12px;">Testeo con los siguientes datos:</br>
+						1) Letra: "ñ" (mal), Letra: "@" (mal), Letra: "[" (mal), Letra: "{" (mal), Letra: "a" (bien);
+						Numero: 1.</br>
+						2) Letra: "F" (mayus); Numero: -11 (mal); Numero: 11 (mal); Numero: -5 (bien).</br>
+						3) Letra: "g"; Numero: 8.</br>
+						4) Letra: "P" (mayus); Numero: -9.</br>
+						5) Letra: "u"; Numero: 0.</br>
+						6) Letra: "k"; Numero: 4.</br>
+						</br>
+						Resultado:</br>
+						- La resta de los números impares: 13 (trece).</br>
+						- La suma de los números pares: 12 (doce).</br>
+						- La cantidad de ceros: 1 (uno).</br>
+						- El promedio de todos los números negativos ingresados: -7 (siete negativo).</br>
+						- La multiplicación de todos los números positivos: 32 (treinta y dos).</br>
+						- El número y la letra del máximo: 8 y "g".</br>
+						- El número y la letra del mínimo: -9 y "P".</br>
+						- La cantidad de vocales: 2 (dos).</br></span>
+				</h3>
+			</div>
+		</div>
+	</div>
+
+	<div class="footer">
+
+
+		<p>Curso de ingreso UTN FRA</p>
+	</div>
+
+</body>
+
+</html>

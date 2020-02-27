@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>Curso Ingreso UTN FRA</title>
+
+	<!--/estilos-->
+	<link rel="stylesheet" type="text/css" href="estilo.css">
+	<link rel="stylesheet" type="text/css" href="animacion.css">
+	<!--final de /estilos-->
+
+	<!--Lógica-Programación-->
+	<script type="text/javascript" src="uno.js"></script>
+	<!--Final de Lógica-Programación -->
+	<link rel="icon" type="image/x-icon" href="favicon.ico">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+
+<body>
+
+	<div class=" animated bounceInRight header">
+		<a class="MiBotonUTNnav" onclick="location.href='index.html'"><i class="far fa-hand-point-left"></i>Men&uacute;
+			ejercicios</a>
+	</div>
+
+	<div class="row">
+		<div class="col-6 col-s-9">
+			<form id="FormIngreso" class=" animated bounceInLeft">
+				<h1>Ingrese datos </h1>
+				<h2>Lado A del paralelogramo:</h2>
+				<input type="number" placeholder="Lado A del paralelogramo" id="ladoA" min="0">
+				<h2>Lado B del paralelogramo:</h2>
+				<input type="number" placeholder="Lado B del paralelogramo" id="ladoB" min="0">
+				<h2>¿Tiene todos los ángulos rectos?</h2>
+				<select id="angulosRectos">
+					<option value="SI">Sí</option>
+					<option value="NO">No</option>
+				</select>
+				<a class="MiBotonUTNnav" onclick="mostrar()">Mostrar informaci&oacute;n</a>
+			</form>
+		</div>
+
+		<div class="col-6 col-s-12">
+			<div class="aside animated bounceInUp">
+				<h2>Enunciado:</h2>
+				<h3>
+					Realizar el algoritmo que tome los datos de un paralelogramo del documento.</br>
+					Mostrar sus lados concatenados. </br></br>
+					<span style="font-size: 12px;">
+					Ej. LadoA: 5, LadoB: 2. Resultado: "Lados concatenados: 52."</br>
+					</span></br>
+					Adicionalmente, </br>
+					de ser rectángulo, mostrar la superficie/área, </br>
+					de ser romboide, mostrar el perímetro,</br>
+					de ser cuadrado, mostrar la multiplicación de sus lados,</br>
+					y de ser rombo, mostrar la suma de sus lados. </br>
+					</br>
+					<span style="font-size: 12px;">
+						Caso de Prueba:</br>
+						1) LadoA: 4, LadoB: 6, Ángulos Rectos: Sí, </br>
+						Resultado: "Lados concatenados: 46. La superficie es 24."</br>
+						2) LadoA: 4, LadoB: 6, Ángulos Rectos: No, </br>
+						Resultado: "Lados concatenados: 46. El perímetro es 20."</br>
+						3) LadoA: 5, LadoB: 5, Ángulos Rectos: Sí, </br>
+						Resultado: "Lados concatenados: 55. La multiplicación de los lados es 25."</br>
+						4) LadoA: 5, LadoB: 5, Ángulos Rectos: No, </br>
+						Resultado: "Lados concatenados: 55. La suma de sus lados es 10."</br>
+					</span>
+				</h3>
+			</div>
+		</div>
+	</div>
+
+	<div class="footer">
+
+
+		<p>Curso de ingreso UTN FRA</p>
+	</div>
+
+</body>
+
+</html>

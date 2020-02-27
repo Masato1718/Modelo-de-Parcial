@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>Curso Ingreso UTN FRA</title>
+
+	<!--/estilos-->
+	<link rel="stylesheet" type="text/css" href="estilo.css">
+	<link rel="stylesheet" type="text/css" href="animacion.css">
+	<!--final de /estilos-->
+
+	<!--Lógica-Programación-->
+	<script type="text/javascript" src="tres.js"></script>
+	<!--Final de Lógica-Programación -->
+	<link rel="icon" type="image/x-icon" href="favicon.ico">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+
+<body>
+
+	<div class=" animated bounceInRight header">
+		<a class="MiBotonUTNnav" onclick="location.href='index.html'"><i class="far fa-hand-point-left"></i>Men&uacute;
+			ejercicios</a>
+	</div>
+
+	<div class="row">
+		<div class="col-4 col-s-9">
+			<form id="FormIngreso" class=" animated bounceInLeft">
+				<h1>Ingrese datos </h1>
+
+				<a class="MiBotonUTNnav" onclick="mostrar()">Mostrar informaci&oacute;n</a>
+			</form>
+		</div>
+
+		<div class="col-8 col-s-12">
+			<div class="aside animated bounceInUp">
+				<h2>Enunciado:</h2>
+				<h3>
+					Realizar el algoritmo que permita ingresar el nombre de un país,</br>
+					cantidad de habitantes en millones entre 1 y 270 (validar que sea un número en ese rango),</br>
+					y la temperatura mínima que se registra en su territorio (validar que sea un número entre -50 y 50)</br>
+					hasta que el usuario quiera</br>
+					e informar al terminar el ingreso por document.write:</br>
+					a) La cantidad de temperaturas impares.</br>
+					b) El nombre del pais con más habitantes.</br>
+					c) La cantidad de paises por debajo de los 20 grados.</br>
+					d) El promedio de habitantes entre los paises ingresados.</br>
+					f) La temperatura máxima ingresada, y nombre del pais que registro esa temperatura.</br>
+				</br>
+					<span style="font-size: 12px">Testeo con los siguientes valores:</br>
+					1) Nombre: "Argentina"; Cantidad: 271 (mal), Cantidad: 0 (mal), Cantidad: 40 (bien);
+					Temperatura: -11.</br>
+					2) Nombre: "Costa Rica"; Cantidad: 4;
+					Temperatura: -51 (mal), Temperatura: 51 (mal), Temperatura: 22 (bien).</br>
+					3) Nombre: "Brasil"; Cantidad: 200; Temperatura: 20.</br>
+					4) Nombre: "Chile"; Cantidad: 15; Temperatura: -21.</br>
+					5) Nombre: "Canadá"; Cantidad: 150; Temperatura: -40.</br>
+				</br>
+					Resultado:</br>
+					- La cantidad de temperaturas impares: 2 (dos).</br>
+					- El nombre del pais con más habitantes : "Brasil" (200m).</br>
+					- La cantidad de paises por debajo de los 20 grados: 3 (tres).</br>
+					- El promedio de habitantes entre los paises ingresados: 88 millones.</br>
+					- La temperatura máxima ingresada, y nombre del pais que registro esa temperatura: "Costa Rica" (20ºC).</br>
+					</span>
+				</h3>
+			</div>
+		</div>
+	</div>
+
+	<div class="footer">
+
+
+		<p>Curso de ingreso UTN FRA</p>
+	</div>
+
+</body>
+
+</html>
